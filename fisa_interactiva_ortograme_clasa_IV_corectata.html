@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Știm să scriem corect ortogramele – Fișă interactivă</title>
+<style>
+  :root { --ink:#203247; --blue:#dcecf7; --teal:#dff2ed; --yellow:#fff2c9; --pink:#f9e4e8; --line:#b8c9d5; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:#eef3f6; color:var(--ink); font-family:Arial, Helvetica, sans-serif; line-height:1.55; }
+  .sheet { max-width:980px; margin:24px auto; background:#fff; padding:34px 42px; border:1px solid #d7e0e7; border-radius:18px; box-shadow:0 8px 28px #20324712; }
+  header { text-align:center; border-bottom:3px solid var(--blue); padding-bottom:18px; margin-bottom:22px; }
+  .eyebrow { font-size:13px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#52738a; }
+  h1 { margin:6px 0 4px; font-size:clamp(27px,4vw,38px); line-height:1.15; }
+  .subtitle { font-size:17px; margin:0; }
+  .meta { display:flex; gap:24px; flex-wrap:wrap; margin:20px 0; font-size:15px; }
+  .meta span { flex:1; min-width:180px; border-bottom:1px solid #8296a5; padding-bottom:5px; }
+  .instructions { background:var(--yellow); border-left:5px solid #e5b844; padding:12px 16px; border-radius:8px; margin:18px 0 22px; }
+  h2 { font-size:21px; margin:24px 0 10px; }
+  .passage { font-size:18px; line-height:2.15; }
+  .blank { display:inline-block; vertical-align:baseline; white-space:nowrap; margin:0 2px; }
+  select { font:inherit; font-weight:700; color:#174e66; border:1.5px solid #8baebf; border-radius:7px; background:#f5fbff; padding:3px 5px; max-width:100%; }
+  select.correct { border-color:#23835d; background:#e3f7ec; }
+  select.incorrect { border-color:#bd3b4b; background:#fff0f1; }
+  .print-choice { display:none; }
+  .actions { display:flex; flex-wrap:wrap; gap:10px; margin:24px 0 12px; }
+  button { border:0; border-radius:9px; padding:11px 17px; font-size:15px; font-weight:700; cursor:pointer; }
+  .primary { background:#205d78; color:#fff; }
+  .secondary { background:#e7eef3; color:#203247; }
+  #feedback { min-height:28px; padding:10px 12px; border-radius:8px; font-weight:700; }\n  #qualification { display:block; margin-top:6px; font-size:20px; }
+  .tips { background:var(--teal); padding:14px 18px; border-radius:10px; margin-top:20px; }
+  .tips ul { margin:6px 0 0; padding-left:22px; }
+  .footer { text-align:center; color:#627888; font-size:12px; margin-top:24px; border-top:1px solid #d8e2e9; padding-top:12px; }
+  @media (max-width:600px) { .sheet { margin:0; padding:22px 18px; border-radius:0; } .passage { font-size:17px; } .meta { gap:14px; } }
+  @media print {
+    @page { size:A4 portrait; margin:13mm; }
+    body { background:#fff; font-size:11pt; }
+    .sheet { max-width:none; margin:0; padding:0; border:0; border-radius:0; box-shadow:none; }
+    header { padding-bottom:10px; margin-bottom:12px; }
+    h1 { font-size:25pt; }
+    .subtitle { font-size:11pt; }
+    .meta { margin:12px 0; }
+    .instructions { padding:8px 10px; margin:10px 0 12px; }
+    h2 { font-size:15pt; margin:14px 0 6px; }
+    .passage { font-size:12pt; line-height:2.0; }
+    select, .actions, #feedback { display:none !important; }
+    .print-choice { display:inline !important; font-weight:700; color:#203247; }
+    .tips { padding:8px 12px; margin-top:12px; }
+    .footer { margin-top:14px; }
+  }
+</style>
+</head>
+<body>
+<main class="sheet">
+  <header>
+    <div class="eyebrow">Limba și literatura română • Clasa a IV-a</div>
+    <h1>ȘTIM SĂ SCRIEM CORECT ORTOGRAMELE</h1>
+    <p class="subtitle">Citim cu atenție, înțelegem sensul și alegem scrierea corectă.</p>
+  </header>
+
+  <div class="meta">
+    <span>Numele și prenumele: ______________________________</span>
+    <span>Data: __________________</span>
+  </div>
+
+  <div class="instructions"><strong>Misiunea ta:</strong> Citește textul. Alege din fiecare listă forma care se potrivește cel mai bine în propoziție. La final, apasă <em>Verifică răspunsurile</em>. Pentru varianta pe hârtie, apasă <em>Imprimă fișa</em>.</div>
+
+  <h2>O vizită la biblioteca școlii</h2>
+  <div class="passage">
+    Într-o dimineață, clasa noastră
+    <span class="blank"><select data-answer="s-a" aria-label="Spațiul 1"><option value="">1. alege</option><option>s-a</option><option>sa</option></select><span class="print-choice">1. __________ (s-a / sa)</span></span>
+    pregătit pentru o vizită la bibliotecă. Doamna învățătoare
+    <span class="blank"><select data-answer="ne-a" aria-label="Spațiul 2"><option value="">2. alege</option><option>nea</option><option>ne-a</option></select><span class="print-choice">2. __________ (ne-a / nea)</span></span>
+    spus să păstrăm liniștea și să alegem o carte
+    <span class="blank"><select data-answer="sau" aria-label="Spațiul 3"><option value="">3. alege</option><option>s-au</option><option>sau</option></select><span class="print-choice">3. __________ (s-au / sau)</span></span>
+    o revistă interesantă.
+
+    <br>La intrare, bibliotecara
+    <span class="blank"><select data-answer="i-a" aria-label="Spațiul 4"><option value="">4. alege</option><option>ia</option><option>i-a</option></select><span class="print-choice">4. __________ (i-a / ia)</span></span>
+    întâmpinat pe colegii mei și le-a arătat rafturile. Mara
+    <span class="blank"><select data-answer="ia" aria-label="Spațiul 5"><option value="">5. alege</option><option>i-a</option><option>ia</option></select><span class="print-choice">5. __________ (ia / i-a)</span></span>
+    o carte despre animale, iar Vlad caută una despre planete.
+
+    <br>Câțiva copii
+    <span class="blank"><select data-answer="s-au" aria-label="Spațiul 6"><option value="">6. alege</option><option>sau</option><option>s-au</option></select><span class="print-choice">6. __________ (s-au / sau)</span></span>
+    așezat la mese și au început să citească. Eu
+    <span class="blank"><select data-answer="l-am" aria-label="Spațiul 7"><option value="">7. alege</option><option>la</option><option>l-am</option></select><span class="print-choice">7. __________ (l-am / la)</span></span>
+    rugat pe Vlad să-mi arate atlasul. Apoi am mers
+    <span class="blank"><select data-answer="la" aria-label="Spațiul 8"><option value="">8. alege</option><option>l-a</option><option>la</option></select><span class="print-choice">8. __________ (la / l-a)</span></span>
+    raftul cu povești.
+
+    <br>La plecare, doamna
+    <span class="blank"><select data-answer="ne-a" aria-label="Spațiul 9"><option value="">9. alege</option><option>nea</option><option>ne-a</option></select><span class="print-choice">9. __________ (ne-a / nea)</span></span>
+    felicitat pentru că am fost atenți. <span class="blank"><select data-answer="ne-am" aria-label="Spațiul 10"><option value="">10. alege</option><option>ne-am</option><option>neam</option></select><span class="print-choice">10. __________ (ne-am / neam)</span></span>
+    bucurat de vizită și am hotărât să revenim. Bibliotecara
+    <span class="blank"><select data-answer="v-a" aria-label="Spațiul 11"><option value="">11. alege</option><option>va</option><option>v-a</option></select><span class="print-choice">11. __________ (v-a / va)</span></span>
+    invitat să participați și voi la următoarea activitate.
+  </div>
+
+  <div class="actions">
+    <button type="button" class="primary" id="checkButton">Verifică răspunsurile</button>
+    <button type="button" class="secondary" id="resetButton">Reîncearcă</button>
+    <button type="button" class="secondary" id="regenerateButton">Generează alt text</button>
+    <button type="button" class="secondary" id="printButton">Imprimă fișa</button>
+  </div>
+  <div id="feedback" aria-live="polite"></div>
+
+  <section class="tips">
+    <strong>Mic truc de detectiv</strong>
+    <ul>
+      <li>Citește propoziția până la capăt.</li>
+      <li>Gândește-te ce înseamnă cuvintele.</li>
+      <li>Alege forma care se potrivește în text.</li>
+    </ul>
+  </section>
+  <div class="footer">Fișă de lucru • Ortograme • Clasa a IV-a</div>
+</main>
+<script>
+const textVersions = [
+  {
+    title: "O zi la muzeu",
+    parts: [
+      ["În excursie, clasa noastră ", ["s-a", "sa"], " oprit la muzeu. Ghidul ", ["ne-a", "nea"], " explicat regulile și ne-a întrebat dacă dorim să vizităm sala cu dinozauri ", ["sau", "s-au"], " sala cu fosile."],
+      ["La intrare, ghidul ", ["i-a", "ia"], " salutat pe colegi. Ana ", ["ia", "i-a"], " un pliant, iar ceilalți copii ", ["s-au", "sau"], " apropiat de vitrine."],
+      ["Eu ", ["l-am", "la"], " întrebat unde se află scheletul uriaș, apoi am mers ", ["la", "l-a"], " sala următoare. Ghidul ", ["ne-a", "nea"], " felicitat pentru atenție. ", ["Ne-am", "Neam"], " bucurat de vizită, iar la final muzeul ", ["v-a", "va"], " aștepta și pe voi."]
+    ],
+    answers: ["s-a", "ne-a", "sau", "i-a", "ia", "s-au", "l-am", "la", "ne-a", "Ne-am", "v-a"]
+  },
+  {
+    title: "Pregătiri pentru serbare",
+    parts: [
+      ["Clasa noastră ", ["s-a", "sa"], " întâlnit pentru a pregăti serbarea. Învățătoarea ", ["ne-a", "nea"], " propus să alegem un cântec ", ["sau", "s-au"], " o poezie."],
+      ["Ea ", ["i-a", "ia"], " ascultat pe fiecare copil. Radu ", ["ia", "i-a"], " cartonașele, iar colegii ", ["s-au", "sau"], " apucat de decorat."],
+      ["Eu ", ["l-am", "la"], " rugat pe Andrei să mă ajute, apoi am mers ", ["la", "l-a"], " dulap după hârtie colorată. Doamna ", ["ne-a", "nea"], " lăudat pentru colaborare. ", ["Ne-am", "Neam"], " bucurat că am lucrat împreună, iar mâine serbarea ", ["va", "v-a"], " începe la ora zece."]
+    ],
+    answers: ["s-a", "ne-a", "sau", "i-a", "ia", "s-au", "l-am", "la", "ne-a", "Ne-am", "va"]
+  },
+  {
+    title: "O dimineață în parc",
+    parts: [
+      ["Dimineața, familia noastră ", ["s-a", "sa"], " plimbat prin parc. Tata ", ["ne-a", "nea"], " întrebat dacă vrem să mergem la lac ", ["sau", "s-au"], " la locul de joacă."],
+      ["Un paznic ", ["i-a", "ia"], " salutat pe vizitatori. Mara ", ["ia", "i-a"], " mingea din rucsac, iar copiii ", ["s-au", "sau"], " adunat pe teren."],
+      ["Eu ", ["l-am", "la"], " chemat pe fratele meu, apoi am alergat ", ["la", "l-a"], " leagăn. Tata ", ["ne-a", "nea"], " spus să fim atenți. ", ["Ne-am", "Neam"], " distrat de minune, iar mâine vremea ", ["va", "v-a"], " fi, sperăm, la fel de frumoasă."]
+    ],
+    answers: ["s-a", "ne-a", "sau", "i-a", "ia", "s-au", "l-am", "la", "ne-a", "Ne-am", "va"]
+  }
+];
+
+let currentVersion = 0;
+
+function renderText(versionIndex) {
+  const version = textVersions[versionIndex];
+  const passage = document.querySelector('.passage');
+  passage.replaceChildren();
+  document.querySelector('.passage').insertAdjacentHTML('beforebegin', '');
+  const heading = document.querySelector('h2');
+  heading.textContent = version.title;
+  let number = 0;
+  version.parts.forEach((part, partIndex) => {
+    if (partIndex > 0) passage.appendChild(document.createElement('br'));
+    for (let i = 0; i < part.length; i++) {
+      if (typeof part[i] === 'string') {
+        passage.appendChild(document.createTextNode(part[i]));
+      } else {
+        number++;
+        const options = part[i];
+        const wrapper = document.createElement('span');
+        wrapper.className = 'blank';
+        const select = document.createElement('select');
+        select.dataset.answer = version.answers[number - 1];
+        select.setAttribute('aria-label', `Spațiul ${number}`);
+        const placeholder = document.createElement('option');
+        placeholder.value = '';
+        placeholder.textContent = `${number}. alege`;
+        select.appendChild(placeholder);
+        [...options].sort(() => Math.random() - 0.5).forEach(optionText => {
+          const option = document.createElement('option');
+          option.value = optionText;
+          option.textContent = optionText;
+          select.appendChild(option);
+        });
+        select.addEventListener('change', () => select.classList.remove('correct', 'incorrect'));
+        wrapper.append(select);
+        const printChoice = document.createElement('span');
+        printChoice.className = 'print-choice';
+        printChoice.textContent = `${number}. __________ (${options.join(' / ')})`;
+        wrapper.append(printChoice);
+        passage.append(wrapper);
+      }
+    }
+  });
+  document.getElementById('feedback').textContent = '';
+  document.getElementById('feedback').style.background = 'transparent';
+}
+
+function regenerateText() {
+  const previous = currentVersion;
+  if (textVersions.length > 1) {
+    do { currentVersion = Math.floor(Math.random() * textVersions.length); }
+    while (currentVersion === previous);
+  }
+  renderText(currentVersion);
+}
+
+function checkAnswers() {
+  const fields = [...document.querySelectorAll('select[data-answer]')];
+  let score = 0;
+  fields.forEach(field => {
+    field.classList.remove('correct', 'incorrect');
+    if (field.value === field.dataset.answer) {
+      score++;
+      field.classList.add('correct');
+    } else {
+      field.classList.add('incorrect');
+    }
+  });
+  const feedback = document.getElementById('feedback');
+  const qualification = score >= 10 ? 'FOARTE BINE' :
+                        score >= 8 ? 'BINE' :
+                        score >= 6 ? 'SUFICIENT' : 'MAI EXERSEAZĂ';
+  feedback.replaceChildren();
+  const resultLine = document.createElement('div');
+  resultLine.textContent = `Ai obținut ${score} din ${fields.length} răspunsuri corecte.`;
+  const qualificationLine = document.createElement('strong');
+  qualificationLine.id = 'qualification';
+  qualificationLine.textContent = `Calificativ: ${qualification}`;
+  const adviceLine = document.createElement('div');
+  adviceLine.textContent = score === fields.length
+    ? 'Excelent! Ai rezolvat misiunea fără nicio greșeală!'
+    : score >= 8
+      ? 'Foarte bine! Recitește formele marcate și verifică sensul propozițiilor.'
+      : 'Mai exersează! Citește fiecare propoziție până la capăt și gândește-te la sens.';
+  feedback.append(resultLine, qualificationLine, adviceLine);
+  feedback.style.background = score >= 10 ? '#e3f7ec' : score >= 8 ? '#e8f1ff' : score >= 6 ? '#fff2c9' : '#fff0f1';
+}
+function resetAnswers() {
+  document.querySelectorAll('select[data-answer]').forEach(field => {
+    field.value = '';
+    field.classList.remove('correct', 'incorrect');
+  });
+  const feedback = document.getElementById('feedback');
+  feedback.replaceChildren();
+  feedback.style.background = 'transparent';
+}
+
+function printWorksheet() {
+  // Calling print from a direct button click is supported by modern browsers.
+  // A short delay lets the page finish updating before the print dialog opens.
+  window.focus();
+  window.setTimeout(() => {
+    try {
+      window.print();
+    } catch (error) {
+      alert('Imprimarea automată nu a putut fi pornită. Apasă Ctrl+P (sau Cmd+P pe Mac) pentru a imprima fișa.');
+    }
+  }, 100);
+}
+
+document.getElementById('checkButton').addEventListener('click', checkAnswers);
+document.getElementById('resetButton').addEventListener('click', resetAnswers);
+document.getElementById('regenerateButton').addEventListener('click', regenerateText);
+document.getElementById('printButton').addEventListener('click', printWorksheet);
+
+renderText(currentVersion);
+</script>
+</body>
+</html>
